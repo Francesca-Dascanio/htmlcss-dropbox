@@ -192,7 +192,22 @@ main {
 }
 
 /* Sezione 6 */
-/* Aggiungere flex ? */
+.section6-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section6-container > h2 {
+    width: 60%;
+    height: 200px;
+}
+
+.section6-container > a {
+    width: 40%;
+    height: 200px;
+}
 
 
 /* REGOLE DEBUG */
@@ -202,7 +217,6 @@ main {
 }
 
 .debug .viewport {
-    height: 200px;
     background-color: blue;
 }
 
