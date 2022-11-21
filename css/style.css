@@ -135,14 +135,26 @@ main {
     flex-direction: row;
 }
 
-.debug .section2-container > .column-left {
+.section2-container > .column-left {
     width: 70%;
 }
 
-.debug .section2-container > .column-right {
+.section2-container > .column-right {
     width: 30%;
 }
 
+/* Sezione 3 */
+.section3-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section3-column {
+    width: 30%;
+    margin-bottom: 20px;
+}
 
 
 
@@ -253,6 +265,12 @@ main {
 }
 
 .debug .section2-container > .column-right {
+    background-color: greenyellow;
+    border: 1px dashed black;
+    height: 200px;
+}
+
+.debug .section3-column {
     background-color: greenyellow;
     border: 1px dashed black;
     height: 200px;
