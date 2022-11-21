@@ -156,12 +156,43 @@ main {
     margin-bottom: 20px;
 }
 
+/* Sezione 4 */
+.section4-container {
+    margin-bottom: 30px;
+}
 
 
+/* Sezione 5 */
+.section5-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cube, .cube-special {
+    width: calc(100vw / 3);
+    height: 430px;
+}
+/* Non va bene height in px - prova altra soluzione */
+
+.cube {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cube-special {
+    overflow-y: scroll;
+}
 
 
+.small-cube {
+    width: calc(100% / 2);
+    height: 215px;
+}
 
-
+/* Sezione 6 */
+/* Aggiungere flex ? */
 
 
 /* REGOLE DEBUG */
@@ -215,7 +246,7 @@ main {
     background-color: yellow;
     border: 1px dashed black;
     width: 200px;
-    height: 60px;
+    height: 30px;
 }
 
 .debug span {
@@ -274,4 +305,19 @@ main {
     background-color: greenyellow;
     border: 1px dashed black;
     height: 200px;
+}
+
+.debug .small-width > h2 {
+    background-color: greenyellow;
+    border: 1px dashed black;
+}
+
+.debug .cube, .cube-special {
+    background-color: greenyellow;
+    border: 1px dashed black;
+}
+
+.debug .small-cube {
+    background-color: green;
+    border: 1px dashed black;
 }
