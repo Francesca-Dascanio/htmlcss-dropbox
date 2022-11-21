@@ -209,6 +209,12 @@ main {
     height: 200px;
 }
 
+/* Sezione 7 */
+.small-width > .question {
+    border-top: 1px solid lightgray;
+    padding: 16px 0px;
+}
+/* Togliere regola small-width > * e mettere solo figli diretti */
 
 /* REGOLE DEBUG */
 
