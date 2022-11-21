@@ -216,6 +216,39 @@ main {
 }
 /* Togliere regola small-width > * e mettere solo figli diretti */
 
+
+/* REGOLE FOOTER */
+footer {
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-top, .footer-bottom {
+    padding: 50px 0px;
+}
+/* manca barra grigia tra footer-top e footer-bottom */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* REGOLE DEBUG */
 
 .debug section > .small-width {
@@ -340,4 +373,11 @@ main {
 .debug .small-cube {
     background-color: green;
     border: 1px dashed black;
+}
+
+/* DEBUG FOOTER */
+
+.debug .footer-container {
+    background-color: lightblue;
+    border: 1px dashed red;
 }
