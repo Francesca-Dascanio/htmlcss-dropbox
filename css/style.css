@@ -14,7 +14,7 @@
     background-color: black;
 }
 
-header footer {
+header footer .section-container-special {
     width: 100vw;
 }
 
@@ -73,6 +73,11 @@ header footer {
 .debug .section-container {
     height: 200px;
     background-color: lightcoral;
+}
+
+.debug .section-container-special {
+    height: 200px;
+    background-color: blue;
 }
 
 .debug .footer-top .footer-bottom {
