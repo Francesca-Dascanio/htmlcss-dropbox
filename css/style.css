@@ -14,16 +14,16 @@
     background-color: black;
 }
 
-header footer .section-container-special {
+header footer .viewport {
     width: 100vw;
 }
 
-.container {
+.big-width {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.section-container {
+.small-width {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -37,6 +37,8 @@ header footer .section-container-special {
 
 
 /* REGOLE HEADER */
+
+/* REGOLE HEADER-TOP */
 header a {
     text-decoration: none;
     padding: 5px;
@@ -73,13 +75,29 @@ header a {
 }
 
 
+/* REGOLE HEADER-BOTTOM */
+.header-bottom > .big-width > h1 {
+    text-align: center;
+    margin-top: 50px;
+}
 
+.header-bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-bottom-section-left {
+    width: 40%;
+}
+
+.jumbo {
+    width: 60%;
+    object-fit: cover;
+}
 
 /* REGOLE MAIN */
-.header-bottom {
-    margin: 50px;
-}
-/* togliere poi margin in px quando definita altezza dell'header-top */
+
 
 
 
@@ -103,31 +121,37 @@ header a {
 
 
 /* REGOLE DEBUG */
-.debug .header-top {
-    height: 50px;
-    background-color: orange;
-}
 
-.debug .header-bottom {
-    height: 200px;
-}
-
-.debug .container {
-    height: 200px;
+.debug .big-width {
     background-color: yellow;
     border: 1px dashed red;
 }
 
-.debug .section-container {
+.debug .small-width {
     height: 200px;
     background-color: lightcoral;
 }
 
-.debug .section-container-special {
+.debug .viewport {
     height: 200px;
     background-color: blue;
 }
 
 .debug .footer-top .footer-bottom {
+    height: 100px;
+}
+
+.debug .header-top {
+    /* height: 50px; */
+    background-color: orange;
+}
+
+.debug .header-bottom {
+    height: 600px;
+}
+
+.debug .header-bottom-section {
+    background-color: pink;
+    border: 1px dashed red;
     height: 100px;
 }
