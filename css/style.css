@@ -28,10 +28,58 @@ header footer .section-container-special {
     margin: 0 auto;
 }
 
+.button {
+    background-color: #0061ff;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* REGOLE HEADER */
+header a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.header-top {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-section-special {
+    width: 70%;
+}
+
+.nav-section > ul > li {
+    display: inline;
+    list-style: none;
+}
+
+.nav-section-special > ul > li {
+    display: inline;
+    list-style: none;
+}
 
 
 
 
+/* REGOLE MAIN */
+.header-bottom {
+    margin: 50px;
+}
+/* togliere poi margin in px quando definita altezza dell'header-top */
 
 
 
