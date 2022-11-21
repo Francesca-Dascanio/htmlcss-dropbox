@@ -19,12 +19,12 @@ header footer .viewport {
 }
 
 .big-width {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .small-width {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -76,29 +76,27 @@ header a {
 
 
 /* REGOLE HEADER-BOTTOM */
-.header-bottom > .big-width > h1 {
-    text-align: center;
-    margin-top: 50px;
+.header-bottom > .big-width {
+    margin-top: 100px;
 }
 
 .header-bottom-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .header-bottom-section-left {
     width: 40%;
 }
 
-.jumbo {
+.header-bottom-section-right {
     width: 60%;
-    object-fit: cover;
 }
 
 /* REGOLE MAIN */
-
-
+main {
+    margin-top: 80px;
+}
 
 
 
@@ -122,11 +120,6 @@ header a {
 
 /* REGOLE DEBUG */
 
-.debug .big-width {
-    background-color: yellow;
-    border: 1px dashed red;
-}
-
 .debug .small-width {
     height: 200px;
     background-color: lightcoral;
@@ -147,11 +140,24 @@ header a {
 }
 
 .debug .header-bottom {
-    height: 600px;
+    height: 500px;
 }
 
-.debug .header-bottom-section {
-    background-color: pink;
-    border: 1px dashed red;
+.debug .header-bottom > .big-width > h1 {
     height: 100px;
+    background-color: green;
+    border: 1px dashed black;
+
+}
+
+.debug .header-bottom-section-left {
+    background-color: pink;
+    border: 1px dashed black;
+    height: 300px;
+}
+
+.debug .header-bottom-section-right {
+    background-color: red;
+    border: 1px dashed black;
+    height: 300px;
 }
