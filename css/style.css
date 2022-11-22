@@ -429,10 +429,26 @@ footer {
 .footer-top, .footer-bottom {
     padding: 50px 0px;
 }
-/* manca barra grigia tra footer-top e footer-bottom */
 
+/* Footer top */
+.footer-section h4 {
 
+}
 
+.footer-section > ul {
+    list-style: none;
+}
+
+.footer-section a {
+    font-size: 0.7em;
+    color: white;
+    text-decoration: none;
+}
+/* Footer bottom */
+.language {
+    margin: 20px 0px;
+    font-size: 0.7em;
+}
 
 
 
@@ -561,9 +577,3 @@ footer {
     border: 1px dashed black;
 }
 
-/* DEBUG FOOTER */
-
-.debug .footer-container {
-    background-color: lightblue;
-    border: 1px dashed red;
-}
