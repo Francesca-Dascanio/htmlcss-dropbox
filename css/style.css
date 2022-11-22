@@ -18,9 +18,6 @@ body {
     background-color: black;
 }
 
-header footer .viewport {
-    width: 100vw;
-}
 
 .big-width {
     max-width: 80vw;
@@ -41,6 +38,12 @@ header footer .viewport {
 
 
 /* REGOLE HEADER */
+header a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: 0.8em;
+}
 
 /* REGOLE HEADER-TOP */
 .header-top {
@@ -59,26 +62,24 @@ header footer .viewport {
     padding: 10px;
 }
 
-.nav-section-special {
-    width: 70%;
+
+.nav-section > div {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.nav-section > ul > li {
+.nav-section > img {
+    vertical-align: middle;
+}
+
+.nav-section ul li {
     display: inline;
     list-style: none;
 }
 
-.nav-section-special > ul > li {
-    display: inline;
-    list-style: none;
+.header-top .nav-section div a:hover {
+    border-bottom: 3px solid lightgrey;
 }
-
-header a {
-    text-decoration: none;
-    padding: 5px;
-    color: black;
-}
-
 
 /* REGOLE HEADER-BOTTOM */
 .header-bottom > .big-width {
@@ -260,9 +261,6 @@ footer {
     background-color: lightcoral;
 }
 
-.debug .viewport {
-    background-color: blue;
-}
 
 .debug .footer-top .footer-bottom {
     height: 100px;
@@ -270,11 +268,6 @@ footer {
 
 
 /* DEBUG HEADER */
-.debug .header-top {
-    /* height: 50px; */
-    background-color: orange;
-}
-
 .debug .header-bottom {
     height: 500px;
 }
