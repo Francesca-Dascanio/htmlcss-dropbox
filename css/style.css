@@ -182,6 +182,7 @@ main {
 
 .section1-column-container > .column {
     border: 1px solid lightgray;
+    width: 32%;
 }
 
 .section1-column-container ul li {
@@ -198,8 +199,8 @@ main {
 .category {
     border-bottom: 1px solid lightgray;
     text-align: center;
-    font-size: 0.7em;
     padding: 5px;
+    font-size: 0.7em;
 }
 
 /* Inizio informazioni della singola colonna */
@@ -210,31 +211,35 @@ main {
 .column-info hr {
     padding: 0;
     margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.column-info h4, a, span {
+    font-size: 0.7em;
 }
 
 .column-info h4 {
-    font-size: 0.7em;
-    font-weight: bold;
+    font-weight: 900;
 }
 
-.column-info div {
-    font-size: 0.7em;
-    color: gray;
-}
 
 main a {
     text-decoration: none;
     padding: 5px;
     color: black;
-    font-size: 1em;
     display: block;
 }
+
 
 .column-link > a > span:last-child {
     text-decoration: underline;
     color: blue;
 }
 
+.column-info i:last-child {
+    color: blue;
+}
 
 
 
@@ -415,12 +420,12 @@ footer {
     padding: 5px 15px;
 } */
 
-.debug .column {
+/* .debug .column {
     width: 30%;
-    height: 400px;
+    height: 700px;
     background-color: greenyellow;
     border: 1px dashed black;
-}
+} */
 
 .debug .section1-bottom {
     width: 100%;
@@ -443,9 +448,9 @@ footer {
     border: 1px dashed black;
 }
 
-.debug .category {
+/* .debug .category {
     background-color: greenyellow;
-}
+} */
 
 .debug .section2-container > .column-left {
     background-color: greenyellow;
@@ -464,11 +469,11 @@ footer {
     border: 1px dashed black;
     height: 200px;
 }
-
+/* 
 .debug .small-width > h2 {
     background-color: greenyellow;
     border: 1px dashed black;
-}
+} */
 
 .debug .cube, .cube-special {
     background-color: greenyellow;
