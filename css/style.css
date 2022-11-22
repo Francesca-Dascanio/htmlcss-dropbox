@@ -34,6 +34,7 @@ body {
     color: white;
     padding-left: 15px;
     padding-right: 15px;
+    text-align: center;
 }
 
 .column-40 {
@@ -52,6 +53,11 @@ body {
     width: 100%;
 }
 
+hr {
+    background-color: lightgray;
+    display: inline-block;
+    width: 50px;
+}
 
 
 /* REGOLE HEADER */
@@ -113,7 +119,6 @@ header a {
 .header-bottom > .big-width > h1 {
     padding-top: 50px;
     font-size: 3em;
-    font-weight: bolder;
 }
 
 .header-bottom > .big-width p {
@@ -138,24 +143,103 @@ main {
 .small-width > * {
  margin: 30px 0px;
 }
+/* questa ultima regola da togliere o rivedere */
 
 
 /* Sezione 1 */
-.column-container {
+/* Inizio intestazione sezione 1: h2 + span */
+.span-container span {
+    font-size: 0.7em;
+}
+
+.span-section {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.span-section .circle {
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    width: 0.7em;
+    height: 0.7em;
+    display: inline-block;
+}
+
+.span-section .circle-blue {
+    border: 3px solid blue;
+    border-radius: 50%;
+    width: 0.7em;
+    height: 0.7em;
+    display: inline-block;
+}
+
+/* Inizio 3 colonne */
+.section1-column-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.column-container > .column {
+.section1-column-container > .column {
     border: 1px solid lightgray;
+}
+
+.section1-column-container ul li {
+    font-size: 0.7em;
+    padding: 5px;
+}
+
+.fa-ul {
+    list-style-type: none;
+    margin-left: var(--fa-li-margin,2.1em);
+    padding-left: 0;
 }
 
 .category {
     border-bottom: 1px solid lightgray;
     text-align: center;
+    font-size: 0.7em;
+    padding: 5px;
 }
 
+/* Inizio informazioni della singola colonna */
+.column-info > * {
+    padding: 10px;
+}
+
+.column-info hr {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.column-info h4 {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.column-info div {
+    font-size: 0.7em;
+    color: gray;
+}
+
+main a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: 1em;
+    display: block;
+}
+
+.column-link > a > span:last-child {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+
+
+/* Inizio ultima colonna singola in fondo */
 .section1-bottom-container {
     display: flex;
     flex-direction: row;
@@ -284,19 +368,16 @@ footer {
 
 /* REGOLE DEBUG */
 
-.debug section > .small-width {
+/* .debug section > .small-width {
     background-color: lightcoral;
-}
+} */
 
 .debug .footer-top .footer-bottom {
     height: 100px;
 }
 
 
-/* DEBUG HEADER */
-.debug .header-bottom {
-    height: 500px;
-}
+
 
 /* .debug .header-bottom > .big-width > h1 {
     height: 100px;
@@ -319,20 +400,20 @@ footer {
 
 
 /* DEBUG MAIN */
-.debug h2 {
+/* .debug h2 {
     background-color: yellow;
     border: 1px dashed black;
     width: 200px;
     height: 30px;
-}
+} */
 
-.debug .span-container > span {
+/* .debug .span-container > span {
     background-color: lightgreen;
     border: 1px dashed black;
     width: 100px;
     height: 60px;
     padding: 5px 15px;
-}
+} */
 
 .debug .column {
     width: 30%;
