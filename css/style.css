@@ -244,10 +244,40 @@ main a {
 
 
 
-/* Inizio ultima colonna singola in fondo */
-.section1-bottom-container {
+/* Inizio section1-bottom colonna singola in fondo */
+.section1-bottom-column {
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+
+.section1-bottom-column-flex {
     display: flex;
     flex-direction: row;
+}
+
+.section1-bottom-column-flex > .column-60, .column-40 {
+    padding: 10px;
+}
+
+.section1-bottom-column-flex h3 {
+    margin-bottom: 10px;
+}
+
+.section1-bottom-column-flex h4 {
+    font-size: 0.7em;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.section1-bottom-column-flex p {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    
+}
+
+.section1-bottom-column-flex a {
+    color: white;
 }
 
 
@@ -427,14 +457,14 @@ footer {
     border: 1px dashed black;
 } */
 
-.debug .section1-bottom {
+/* .debug .section1-bottom {
     width: 100%;
     height: 200px;
     background-color: greenyellow;
     border: 1px dashed black;
-}
+} */
 
-.debug .section1-bottom-left {
+/* .debug .section1-bottom-left {
     height: 100px;
     width: 70%;
     background-color: greenyellow;
@@ -446,7 +476,7 @@ footer {
     width: 30%;
     background-color: greenyellow;
     border: 1px dashed black;
-}
+} */
 
 /* .debug .category {
     background-color: greenyellow;
