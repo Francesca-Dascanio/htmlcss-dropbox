@@ -37,6 +37,15 @@ body {
     text-align: center;
 }
 
+.button-special {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
 .column-40 {
     width: 40%;
 }
@@ -51,6 +60,10 @@ body {
 
 .column-100 {
     width: 100%;
+}
+
+.column-70 {
+    width: 70%;
 }
 
 hr {
@@ -287,12 +300,23 @@ main a {
     flex-direction: row;
 }
 
-.section2-container > .column-left {
-    width: 70%;
+.section2-container img {
+    width: 100%;
 }
 
-.section2-container > .column-right {
-    width: 30%;
+.section2-container p {
+    font-size: 0.7em;
+    margin: 20px 10px;
+}
+
+.section2-container h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.section2-container .button-special {
+    margin-left: 10px;
+    display: inline-block;
 }
 
 /* Sezione 3 */
