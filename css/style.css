@@ -36,6 +36,23 @@ body {
     padding-right: 15px;
 }
 
+.column-40 {
+    width: 40%;
+}
+
+.column-60 {
+    width: 60%;
+}
+
+.column-30 {
+    width: 30%;
+}
+
+.column-100 {
+    width: 100%;
+}
+
+
 
 /* REGOLE HEADER */
 header a {
@@ -52,6 +69,7 @@ header a {
     left: 0;
     top: 0;
     z-index: 30;
+    background-color: white;
 }
 
 .nav-container {
@@ -86,22 +104,31 @@ header a {
     margin-top: 50px;
 }
 
-.header-bottom > .big-width > h1 {
-    padding-top: 50px;
-}
-
 .header-bottom-container {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
 }
 
-.header-bottom-section-left {
-    width: 40%;
+.header-bottom > .big-width > h1 {
+    padding-top: 50px;
+    font-size: 3em;
+    font-weight: bolder;
 }
 
-.header-bottom-section-right {
-    width: 60%;
+.header-bottom > .big-width p {
+    padding: 0px 20px 40px 0px;
 }
+
+.header-bottom-link {
+    margin-bottom: 20px;
+}
+
+.column-60 > img {
+    width: 100%;
+}
+
+
 
 /* REGOLE MAIN */
 main {
@@ -261,7 +288,6 @@ footer {
     background-color: lightcoral;
 }
 
-
 .debug .footer-top .footer-bottom {
     height: 100px;
 }
@@ -272,14 +298,14 @@ footer {
     height: 500px;
 }
 
-.debug .header-bottom > .big-width > h1 {
+/* .debug .header-bottom > .big-width > h1 {
     height: 100px;
     background-color: green;
     border: 1px dashed black;
 
-}
+} */
 
-.debug .header-bottom-section-left {
+/* .debug .header-bottom-section-left {
     background-color: pink;
     border: 1px dashed black;
     height: 300px;
@@ -289,7 +315,7 @@ footer {
     background-color: red;
     border: 1px dashed black;
     height: 300px;
-}
+} */
 
 
 /* DEBUG MAIN */
