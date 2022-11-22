@@ -6,6 +6,10 @@
 }
 
 /* REGOLE GENERALI */
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .bg-lightblue {
     background-color: #b4d0e7;
 }
