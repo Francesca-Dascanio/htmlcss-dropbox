@@ -66,6 +66,14 @@ body {
     width: 70%;
 }
 
+.column-95 {
+    width: 95%;
+}
+
+.column-5 {
+    width: 5%;
+}
+
 hr {
     background-color: lightgray;
     display: inline-block;
@@ -407,12 +415,30 @@ main a {
     height: 200px;
 }
 
-/* Sezione 7 */
+/* Sezione FAQ */
 .small-width > .question {
     border-top: 1px solid lightgray;
     padding: 16px 0px;
 }
 /* Togliere regola small-width > * e mettere solo figli diretti */
+
+.faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+}
+
+.question {
+    font-size: 0.7em;
+    font-weight: 900;
+}
+
+.answer {
+    font-size: 0.7em;
+}
+
 
 
 /* REGOLE FOOTER */
