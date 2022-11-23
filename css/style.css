@@ -8,6 +8,23 @@
 /* REGOLE GENERALI */
 body {
     font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1em;
 }
 
 .bg-lightblue {
@@ -100,7 +117,6 @@ header a {
     text-decoration: none;
     padding: 5px;
     color: black;
-    font-size: 0.8em;
 }
 
 /* REGOLE HEADER-TOP */
@@ -164,9 +180,6 @@ header a {
     margin-top: 30px;
 }
 
-.header-bottom h1 {
-    font-size: 2.5em;
-}
 
 .header-bottom-container-flex .column-40 {
     display: flex;
@@ -185,18 +198,8 @@ main {
     margin-top: 80px;
 }
 
-/* .small-width > * {
- margin: 30px 0px;
-} */
-/* questa ultima regola da togliere o rivedere */
-
-
 /* Sezione 1 */
 /* Inizio intestazione sezione 1: h2 + span */
-.span-container span {
-    font-size: 0.7em;
-}
-
 .span-section {
     display: inline-block;
     margin-right: 20px;
@@ -231,7 +234,7 @@ main {
 }
 
 .section1-column-container ul li {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 5px;
 }
 
@@ -245,7 +248,6 @@ main {
     border-bottom: 1px solid lightgray;
     text-align: center;
     padding: 5px;
-    font-size: 0.7em;
 }
 
 /* Inizio informazioni della singola colonna */
@@ -260,15 +262,6 @@ main {
     margin-bottom: 10px;
 }
 
-.column-info h4, a, span {
-    font-size: 0.7em;
-}
-
-.column-info h4 {
-    font-weight: 900;
-}
-
-
 main a {
     text-decoration: none;
     padding: 5px;
@@ -282,11 +275,9 @@ main a {
     color: blue;
 }
 
-.column-info i:last-child {
+.column-info .list-blue i {
     color: blue;
 }
-
-
 
 
 /* Inizio section1-bottom colonna singola in fondo */
@@ -299,6 +290,7 @@ main a {
 .section1-bottom-column-flex {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .section1-bottom-column-flex > .column-60 .column-40 {
@@ -310,24 +302,26 @@ main a {
 }
 
 .section1-bottom-column-flex h4 {
-    font-size: 0.7em;
-    font-weight: 900;
     margin-bottom: 30px;
 }
 
 .section1-bottom-column-flex p {
-    font-size: 0.7em;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;   
 }
 
 .section1-bottom-column-flex a {
     color: white;
 }
 
+.section1-bottom-column-flex .column-30 {
+    position: relative;
+}
+
 .section1-bottom-column-flex .button {
     display: inline-block;
-    margin: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 .section1-bottom-column-flex .column-70 {
@@ -340,22 +334,16 @@ main a {
     flex-direction: row;
 }
 
-.section2-container img {
-    width: 100%;
-}
-
 .section2-container p {
-    font-size: 0.7em;
     margin: 20px 10px;
 }
 
 .section2-container h3 {
     margin-left: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .section2-container .button-special {
-    margin-left: 10px;
     display: inline-block;
 }
 
@@ -377,7 +365,7 @@ main a {
 }
 
 .section3-container p {
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
     margin-top: 20px;
 }
 
@@ -496,7 +484,7 @@ main a {
 }
 
 .square-special-info > *  {
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
     margin: 20px 0px;
 
 }
@@ -537,12 +525,12 @@ main a {
 }
 
 .question {
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
     font-weight: 900;
 }
 
 .answer {
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
 }
 
 
@@ -572,14 +560,14 @@ footer {
 }
 
 .footer-section a {
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
     color: white;
     text-decoration: none;
 }
 /* Footer bottom */
 .language {
     margin: 20px 0px;
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
 }
 
 
