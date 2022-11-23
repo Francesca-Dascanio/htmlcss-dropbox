@@ -383,6 +383,7 @@ main a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 100vw;
 }
 
 .square, .square-special {
@@ -398,12 +399,8 @@ main a {
 
 .square-special {
     padding: 20px;
-}
-
-/* .square-special {
     overflow-y: scroll;
-} */
-
+}
 
 .small-square {
     width: calc(100% / 2);
