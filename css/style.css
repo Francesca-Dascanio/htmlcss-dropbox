@@ -528,6 +528,29 @@ main a {
     font-weight: bold;
 }
 
+.answer {
+    display: none;
+}
+
+.column-5-hide {
+    display: none;
+}
+
+.faq:hover {
+    height: 100px;
+}
+
+.faq:hover .answer {
+    display: block;
+}
+
+.faq:hover .column-5-hide {
+    display: block; 
+}
+
+.faq:hover .column-5 {
+    display: none; 
+}
 
 /* REGOLE FOOTER */
 footer {
@@ -583,9 +606,9 @@ footer {
     background-color: lightcoral;
 } */
 
-.debug .footer-top .footer-bottom {
+/* .debug .footer-top .footer-bottom {
     height: 100px;
-}
+} */
 
 
 
