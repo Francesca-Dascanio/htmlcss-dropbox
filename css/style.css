@@ -76,7 +76,7 @@ body {
 
 hr {
     background-color: lightgray;
-    display: inline-block;
+    display: block;
     width: 50px;
 }
 
@@ -362,42 +362,126 @@ main a {
 }
 
 
-/* Sezione 4 */
-.section4-container {
-    margin-bottom: 30px;
+/* Sezione 4 - parte 1 */
+.section4-1-container {
+    margin-bottom: 60px;
+    max-width: 60%;
+}
+
+.section4-1-container > a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.section4-1-container > h2 {
+    margin-bottom: 20px;
 }
 
 
-/* Sezione 5 */
-.section5-container {
+/* Sezione 4 - parte 2 */
+.section4-2-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.cube, .cube-special {
+.square, .square-special {
     width: calc(100% / 3);
     height: calc(100vw / 3);
 }
-/* Non va bene height in px - prova altra soluzione */
 
-.cube {
+.square {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.cube-special {
+.square-special {
+    padding: 20px;
+}
+
+/* .square-special {
     overflow-y: scroll;
-}
+} */
 
 
-.small-cube {
+.small-square {
     width: calc(100% / 2);
-    height: calc(100% / 2)
+    height: calc(100% / 2);
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
-/* Sezione 6 */
+.square img {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -25%;
+    margin-left: -25%;
+    filter:invert(1);
+}
+
+.bg-img-green {
+    background-color: #a2d39b;
+}
+
+.bg-img-bordeaux {
+    background-color:#61082b;
+}
+
+.bg-img-blue {
+    background-color:#0093ce;
+}
+
+.bg-img-red {
+    background-color:#ff1c1c;
+}
+
+.bg-img-darkred {
+    background-color:#d5001f;
+}
+
+.bg-img-lightblue {
+    background-color: #b4d0e7;
+}
+
+.bg-img-darkblue {
+    background-color: #0d2481;
+}
+
+.bg-img-yellow {
+    background-color: #ffd830;
+}
+
+#designit-small {
+    border: 10px solid #d1e9cd;
+}
+
+.bg-square {
+    background-color: #f5f5f5;
+}
+
+.square-special img {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.square-special-info > *  {
+    font-size: 0.7em;
+    margin: 20px 0px;
+
+}
+
+
+/* Sezione 4 - parte 3 */
 .section6-container {
     display: flex;
     flex-direction: row;
@@ -593,13 +677,13 @@ footer {
     border: 1px dashed black;
 } */
 
-.debug .cube, .cube-special {
+/* .debug .square, .square-special {
     background-color: greenyellow;
     border: 1px dashed black;
-}
+} */
 
-.debug .small-cube {
+/* .debug .small-square {
     background-color: green;
     border: 1px dashed black;
-}
+} */
 
