@@ -532,8 +532,8 @@ main a {
     display: none;
 }
 
-.column-5-hide {
-    display: none;
+.faq .column-5:last-child {
+    display: block;
 }
 
 .faq:hover {
@@ -544,13 +544,15 @@ main a {
     display: block;
 }
 
-.faq:hover .column-5-hide {
-    display: block; 
-}
-
-.faq:hover .column-5 {
+.faq:hover .column-5:first-child {
     display: none; 
 }
+
+
+.faq:hover .column-5:last-child {
+    display: inline-block;
+}
+
 
 /* REGOLE FOOTER */
 footer {
